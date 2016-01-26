@@ -37,6 +37,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5AE0D391C57A6640022E367 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B5AE0D3A1C57A6700022E367 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B5AE0D3B1C57A6760022E367 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5BC31B11C56175200A510A6 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		B5BC31A31C56175200A510A6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +78,10 @@
 		B5BC31AE1C56175200A510A6 /* MyMovies */ = {
 			isa = PBXGroup;
 			children = (
+				B5AE0D3B1C57A6760022E367 /* Controller */,
+				B5AE0D3A1C57A6700022E367 /* View */,
+				B5AE0D391C57A6640022E367 /* Model */,
 				B5BC31AF1C56175200A510A6 /* AppDelegate.swift */,
-				B5BC31B11C56175200A510A6 /* ViewController.swift */,
 				B5BC31B31C56175200A510A6 /* Main.storyboard */,
 				B5BC31B91C56175200A510A6 /* Assets.xcassets */,
 				B5BC31BB1C56175200A510A6 /* LaunchScreen.storyboard */,
@@ -258,6 +282,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rk.flowid.pl.MyMovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -269,6 +294,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rk.flowid.pl.MyMovies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -291,6 +317,7 @@
 				B5BC31C31C56175200A510A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
