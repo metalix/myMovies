@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="105" id="dUb-re-td1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="105" id="dUb-re-td1" customClass="MovieCell" customModule="MyMovies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dUb-re-td1" id="GUV-Sf-IJ0">
@@ -55,6 +55,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="ER2-Mz-XL2" id="FxL-7N-Xy7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +66,7 @@
         <!--DetailsVC-->
         <scene sceneID="38j-Xa-lc6">
             <objects>
-                <viewController title="DetailsVC" id="bXt-q4-3AI" sceneMemberID="viewController">
+                <viewController title="DetailsVC" id="bXt-q4-3AI" customClass="DetailVC" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P5E-T1-BnY"/>
                         <viewControllerLayoutGuide type="bottom" id="e9f-hq-f8Q"/>
@@ -239,7 +242,7 @@
         <!--Add Movie-->
         <scene sceneID="UAq-nH-KLo">
             <objects>
-                <viewController title="Add Movie" id="yyQ-1N-oQm" sceneMemberID="viewController">
+                <viewController title="Add Movie" id="yyQ-1N-oQm" customClass="AddMovieVC" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g9r-gh-FZ0"/>
                         <viewControllerLayoutGuide type="bottom" id="1R8-ZI-hnR"/>

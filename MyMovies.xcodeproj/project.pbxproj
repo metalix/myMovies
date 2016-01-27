@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5AE0D3F1C57A7720022E367 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE0D3E1C57A7720022E367 /* DetailVC.swift */; };
+		B5AE0D411C57A7960022E367 /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE0D401C57A7960022E367 /* AddMovieVC.swift */; };
+		B5AE0D441C57B5E80022E367 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE0D421C57B5E80022E367 /* Movie+CoreDataProperties.swift */; };
+		B5AE0D451C57B5E80022E367 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE0D431C57B5E80022E367 /* Movie.swift */; };
+		B5AE0D471C57B9380022E367 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE0D461C57B9380022E367 /* MovieCell.swift */; };
 		B5BC31B01C56175200A510A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC31AF1C56175200A510A6 /* AppDelegate.swift */; };
 		B5BC31B21C56175200A510A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC31B11C56175200A510A6 /* ViewController.swift */; };
 		B5BC31B51C56175200A510A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BC31B31C56175200A510A6 /* Main.storyboard */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5AE0D3E1C57A7720022E367 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		B5AE0D401C57A7960022E367 /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddMovieVC.swift; path = ../AddMovieVC.swift; sourceTree = "<group>"; };
+		B5AE0D421C57B5E80022E367 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5AE0D431C57B5E80022E367 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
+		B5AE0D461C57B9380022E367 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		B5BC31AC1C56175200A510A6 /* MyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BC31AF1C56175200A510A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5BC31B11C56175200A510A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +50,8 @@
 		B5AE0D391C57A6640022E367 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5AE0D421C57B5E80022E367 /* Movie+CoreDataProperties.swift */,
+				B5AE0D431C57B5E80022E367 /* Movie.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -47,6 +59,7 @@
 		B5AE0D3A1C57A6700022E367 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5AE0D461C57B9380022E367 /* MovieCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -54,6 +67,8 @@
 		B5AE0D3B1C57A6760022E367 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B5AE0D401C57A7960022E367 /* AddMovieVC.swift */,
+				B5AE0D3E1C57A7720022E367 /* DetailVC.swift */,
 				B5BC31B11C56175200A510A6 /* ViewController.swift */,
 			);
 			name = Controller;
@@ -163,8 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AE0D451C57B5E80022E367 /* Movie.swift in Sources */,
+				B5AE0D3F1C57A7720022E367 /* DetailVC.swift in Sources */,
+				B5AE0D471C57B9380022E367 /* MovieCell.swift in Sources */,
+				B5AE0D411C57A7960022E367 /* AddMovieVC.swift in Sources */,
 				B5BC31B21C56175200A510A6 /* ViewController.swift in Sources */,
 				B5BC31B81C56175200A510A6 /* MyMovies.xcdatamodeld in Sources */,
+				B5AE0D441C57B5E80022E367 /* Movie+CoreDataProperties.swift in Sources */,
 				B5BC31B01C56175200A510A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
