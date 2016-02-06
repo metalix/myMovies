@@ -33,7 +33,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ktG-Pf-0nG">
                                                     <rect key="frame" x="0.0" y="0.0" width="370" height="105"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="spy" translatesAutoresizingMaskIntoConstraints="NO" id="1Oy-Nc-45i">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="spy" translatesAutoresizingMaskIntoConstraints="NO" id="1Oy-Nc-45i">
                                                             <rect key="frame" x="0.0" y="0.0" width="183" height="105"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="LIa-aL-ega">
@@ -153,7 +153,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spy game3" translatesAutoresizingMaskIntoConstraints="NO" id="eY5-cd-BSC">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spy game3" translatesAutoresizingMaskIntoConstraints="NO" id="eY5-cd-BSC">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="228"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMD-SU-dw7">
@@ -354,7 +354,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spy game3" translatesAutoresizingMaskIntoConstraints="NO" id="azs-OG-lw9">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="azs-OG-lw9">
                                         <rect key="frame" x="67" y="280" width="240" height="128"/>
                                         <color key="backgroundColor" red="0.34901960780000002" green="0.51372549020000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
