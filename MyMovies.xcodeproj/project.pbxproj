@@ -93,9 +93,9 @@
 		B5BC31AE1C56175200A510A6 /* MyMovies */ = {
 			isa = PBXGroup;
 			children = (
-				B5AE0D3B1C57A6760022E367 /* Controller */,
-				B5AE0D3A1C57A6700022E367 /* View */,
 				B5AE0D391C57A6640022E367 /* Model */,
+				B5AE0D3A1C57A6700022E367 /* View */,
+				B5AE0D3B1C57A6760022E367 /* Controller */,
 				B5BC31AF1C56175200A510A6 /* AppDelegate.swift */,
 				B5BC31B31C56175200A510A6 /* Main.storyboard */,
 				B5BC31B91C56175200A510A6 /* Assets.xcassets */,
