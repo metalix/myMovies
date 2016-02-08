@@ -34,5 +34,19 @@ class DetailVC: UIViewController {
         
     }
 
+    @IBAction func goToIMDbBtnPressed(sender: UIButton) {
+        let url : String = movie.imdbLink!
+        performSegueWithIdentifier("WebLink", sender: url)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "WebLink" {
+            if let webVC = segue.destinationViewController as? WebVC {
+                if let url = sender as? String {
+                    webVC.url = url
+                }
+            }
+        }
+    }
     
 }
