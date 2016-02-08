@@ -239,6 +239,7 @@
                                     <constraint firstItem="nke-zt-EIY" firstAttribute="top" secondItem="hMD-SU-dw7" secondAttribute="bottom" constant="20" id="8P2-ji-om8"/>
                                     <constraint firstAttribute="trailing" secondItem="eY5-cd-BSC" secondAttribute="trailing" id="8gw-JP-TI6"/>
                                     <constraint firstItem="PR0-AG-24a" firstAttribute="top" secondItem="eY5-cd-BSC" secondAttribute="bottom" constant="10" id="8l2-XM-tGF"/>
+                                    <constraint firstItem="RTE-xr-mUz" firstAttribute="top" secondItem="O8A-gI-nEj" secondAttribute="bottom" constant="20" id="DSR-5b-CsV"/>
                                     <constraint firstItem="nke-zt-EIY" firstAttribute="leading" secondItem="i2T-J7-RrB" secondAttribute="leading" constant="20" id="FGj-eU-k5w"/>
                                     <constraint firstItem="eY5-cd-BSC" firstAttribute="top" secondItem="i2T-J7-RrB" secondAttribute="top" id="Fqz-lO-49v"/>
                                     <constraint firstItem="O8A-gI-nEj" firstAttribute="top" secondItem="8ga-9F-wgW" secondAttribute="top" id="GVz-IV-w5a"/>
@@ -261,6 +262,12 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="PR0-AG-24a" secondAttribute="trailing" constant="10" id="usy-0B-LVo"/>
                                     <constraint firstItem="hMD-SU-dw7" firstAttribute="leading" secondItem="i2T-J7-RrB" secondAttribute="leadingMargin" constant="10" id="wu0-QJ-h2G"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WDV-gu-cwU"/>
+                                        <exclude reference="spg-hC-c5c"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
