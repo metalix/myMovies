@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,12 +19,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ER2-Mz-XL2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ER2-Mz-XL2">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="105" id="dUb-re-td1" customClass="MovieCell" customModule="MyMovies" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="105"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dUb-re-td1" id="GUV-Sf-IJ0">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1376.5" y="549.5"/>
+            <point key="canvasLocation" x="1096.5" y="1209.5"/>
         </scene>
         <!--DetailsVC-->
         <scene sceneID="38j-Xa-lc6">
@@ -204,33 +204,8 @@
                                             <rect key="frame" x="110" y="535" width="270" height="38"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMDb :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTE-xr-mUz">
-                                        <rect key="frame" x="20" y="431" width="90" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="9De-cx-veh"/>
-                                            <constraint firstAttribute="width" constant="90" id="zPL-kJ-DHu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                        <color key="textColor" red="0.34509803919999998" green="0.83921568629999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="20" y="461" width="90" height="20"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.imdb.com/title/tt0266987/?ref_=nv_sr_2" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ1-Py-sdM">
-                                        <rect key="frame" x="110" y="431" width="255" height="36"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="110" y="461" width="470" height="36"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="110" y="461" width="270" height="36"/>
-                                        </variation>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srr-hb-jOr">
-                                        <rect key="frame" x="137" y="475" width="102" height="30"/>
+                                        <rect key="frame" x="136" y="431" width="102" height="30"/>
                                         <color key="backgroundColor" red="0.34509803919999998" green="0.83921568629999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ap7-L6-wC9"/>
@@ -244,6 +219,19 @@
                                             <action selector="goToIMDbBtnPressed:" destination="bXt-q4-3AI" eventType="touchUpInside" id="zgQ-N4-ChS"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMDb :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTE-xr-mUz">
+                                        <rect key="frame" x="20" y="441" width="90" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="9De-cx-veh"/>
+                                            <constraint firstAttribute="width" constant="90" id="zPL-kJ-DHu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" red="0.34509803919999998" green="0.83921568629999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="20" y="461" width="90" height="20"/>
+                                        </variation>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.3411764706" green="0.37254901959999998" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -256,24 +244,22 @@
                                     <constraint firstItem="O8A-gI-nEj" firstAttribute="top" secondItem="8ga-9F-wgW" secondAttribute="top" id="GVz-IV-w5a"/>
                                     <constraint firstAttribute="trailing" secondItem="IMu-au-i9Z" secondAttribute="trailing" constant="8" id="Gaa-LR-uAd"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="hMD-SU-dw7" secondAttribute="trailing" constant="10" id="LkY-dy-4hl"/>
+                                    <constraint firstItem="srr-hb-jOr" firstAttribute="bottom" secondItem="RTE-xr-mUz" secondAttribute="bottom" id="O7W-uC-nnQ"/>
                                     <constraint firstItem="IMu-au-i9Z" firstAttribute="baseline" secondItem="nke-zt-EIY" secondAttribute="baseline" id="OBK-zY-gEV"/>
-                                    <constraint firstItem="srr-hb-jOr" firstAttribute="top" secondItem="nJ1-Py-sdM" secondAttribute="bottom" constant="8" id="QBo-oZ-5la"/>
                                     <constraint firstItem="8ga-9F-wgW" firstAttribute="leading" secondItem="i2T-J7-RrB" secondAttribute="leading" constant="20" id="QjE-hb-nN7"/>
                                     <constraint firstItem="RTE-xr-mUz" firstAttribute="leading" secondItem="i2T-J7-RrB" secondAttribute="leading" constant="20" id="Qn5-xt-Gd7"/>
                                     <constraint firstItem="eY5-cd-BSC" firstAttribute="height" secondItem="i2T-J7-RrB" secondAttribute="height" multiplier="0.333" id="RJf-Rp-bzr"/>
                                     <constraint firstItem="srr-hb-jOr" firstAttribute="centerX" secondItem="i2T-J7-RrB" secondAttribute="centerX" id="TwE-s4-IvX"/>
-                                    <constraint firstItem="nJ1-Py-sdM" firstAttribute="top" secondItem="RTE-xr-mUz" secondAttribute="top" id="Vti-xQ-TfO"/>
-                                    <constraint firstItem="RTE-xr-mUz" firstAttribute="top" secondItem="O8A-gI-nEj" secondAttribute="bottom" constant="10" id="WDV-gu-cwU"/>
+                                    <constraint firstItem="RTE-xr-mUz" firstAttribute="top" secondItem="O8A-gI-nEj" secondAttribute="bottom" constant="20" id="WDV-gu-cwU"/>
                                     <constraint firstItem="O8A-gI-nEj" firstAttribute="leading" secondItem="8ga-9F-wgW" secondAttribute="trailing" id="Xbp-su-PJh"/>
-                                    <constraint firstItem="nJ1-Py-sdM" firstAttribute="leading" secondItem="RTE-xr-mUz" secondAttribute="trailing" id="Yxp-BP-0Jx"/>
                                     <constraint firstItem="8ga-9F-wgW" firstAttribute="top" secondItem="nke-zt-EIY" secondAttribute="bottom" constant="10" id="hhg-6z-z4d"/>
                                     <constraint firstItem="hMD-SU-dw7" firstAttribute="top" secondItem="PR0-AG-24a" secondAttribute="bottom" constant="10" id="jd7-DQ-8dl"/>
                                     <constraint firstAttribute="trailing" secondItem="O8A-gI-nEj" secondAttribute="trailing" constant="10" id="kHU-Ec-fAI"/>
                                     <constraint firstItem="IMu-au-i9Z" firstAttribute="leading" secondItem="nke-zt-EIY" secondAttribute="trailing" id="nQa-If-b0l"/>
                                     <constraint firstItem="eY5-cd-BSC" firstAttribute="leading" secondItem="i2T-J7-RrB" secondAttribute="leading" id="o3T-Aw-jcX"/>
+                                    <constraint firstItem="RTE-xr-mUz" firstAttribute="top" secondItem="8ga-9F-wgW" secondAttribute="bottom" constant="19" id="spg-hC-c5c"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="PR0-AG-24a" secondAttribute="trailing" constant="10" id="usy-0B-LVo"/>
                                     <constraint firstItem="hMD-SU-dw7" firstAttribute="leading" secondItem="i2T-J7-RrB" secondAttribute="leadingMargin" constant="10" id="wu0-QJ-h2G"/>
-                                    <constraint firstAttribute="trailing" secondItem="nJ1-Py-sdM" secondAttribute="trailing" constant="10" id="zV0-d6-VRm"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -291,7 +277,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="directorLabel" destination="IMu-au-i9Z" id="S0g-ED-9IB"/>
-                        <outlet property="imdbLinkLabel" destination="nJ1-Py-sdM" id="fBx-Lf-qJD"/>
                         <outlet property="movieDescLabel" destination="hMD-SU-dw7" id="W8H-r0-xZK"/>
                         <outlet property="movieImage" destination="eY5-cd-BSC" id="GQt-4N-tYF"/>
                         <outlet property="movieTitleLabel" destination="PR0-AG-24a" id="kBp-k6-X0S"/>
@@ -301,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEb-0y-xWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2056.5" y="1298.5"/>
+            <point key="canvasLocation" x="1028.5" y="346.5"/>
         </scene>
         <!--WebVC-->
         <scene sceneID="KE6-zo-cEn">
@@ -381,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcR-ER-HOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2645.5" y="1298.5"/>
+            <point key="canvasLocation" x="1577.5" y="346.5"/>
         </scene>
         <!--Add Movie-->
         <scene sceneID="UAq-nH-KLo">
@@ -537,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeV-m8-1bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2058" y="550"/>
+            <point key="canvasLocation" x="1601.5" y="1185.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FJ7-aH-Wyu">

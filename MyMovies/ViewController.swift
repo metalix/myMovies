@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-        self.automaticallyAdjustsScrollViewInsets = false;
+       // self.automaticallyAdjustsScrollViewInsets = false;
         
         let logo = UIImage(named: "Movies.png")
         let imageView = UIImageView(image:logo)
@@ -61,11 +61,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         if let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as? MovieCell {
             let movie = movies[indexPath.row]
-            let numb : Int = indexPath.row
-            if numb % 2 != 0 {
-                cell.contentView.backgroundColor = UIColor(red: 89/255.0, green: 131/255.0, blue: 135/255.0, alpha: 1.0)
-            }
-            
             cell.configureCell(movie)
             return cell
         } else {
@@ -78,6 +73,47 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         movie = movies[indexPath.row]
         performSegueWithIdentifier("MovieDetail", sender: movie)
     }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            
+            let app = UIApplication.sharedApplication().delegate as! AppDelegate
+            let context = app.managedObjectContext
+            
+            let movie = movies[indexPath.row] as NSManagedObject
+            
+            context.deleteObject(movie)
+            
+            do {
+                try context.save()
+            } catch {
+                let saveError = error as NSError
+                print(saveError)
+            }
+         
+            
+            movies.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+            
+            tableView.reloadData()
+            
+            
+        }
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell,
+        forRowAtIndexPath indexPath: NSIndexPath) {
+            
+            if (indexPath.row % 2 == 0)
+            {
+                cell.contentView.backgroundColor = UIColor(red: 89/255.0, green: 131/255.0, blue: 135/255.0, alpha: 1.0)
+            }
+            else
+            {
+                cell.contentView.backgroundColor = UIColor(red: 87/255.0, green: 95/255.0, blue: 130/255.0, alpha: 1.0)
+            }
+    }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "MovieDetail" {

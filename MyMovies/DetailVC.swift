@@ -16,7 +16,6 @@ class DetailVC: UIViewController {
     @IBOutlet weak var movieDescLabel: UILabel!
     @IBOutlet weak var directorLabel: UILabel!
     @IBOutlet weak var starsLabel: UILabel!
-    @IBOutlet weak var imdbLinkLabel: UILabel!
     
     var movie: Movie!
 
@@ -30,7 +29,6 @@ class DetailVC: UIViewController {
         movieDescLabel.text = movie.desc
         directorLabel.text = movie.director
         starsLabel.text = movie.stars
-        imdbLinkLabel.text = movie.imdbLink
         
     }
 
